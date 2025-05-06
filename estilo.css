@@ -1,23 +1,71 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 header {
-  background-color: #2196F3;
-  color: white;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid #ccc;
+}
+header .logo {
+  width: 80px;
+  height: auto;
+}
+h1 {
+  color: #B88A00;
+  margin-bottom: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.producto {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   padding: 10px;
   text-align: center;
 }
-.producto {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px 0;
+.producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 button {
-  margin-top: 10px;
-  background-color: #4CAF50;
+  background-color: #B88A00;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 8px 12px;
   cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#carrito-container {
+  padding: 20px;
+}
+#contacto {
+  padding: 20px;
+  background: #f1f1f1;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background-color: #2196F3;
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }

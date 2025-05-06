@@ -1,5 +1,17 @@
 [
-  {"nombre": "Producto 1", "precio": 100},
-  {"nombre": "Producto 2", "precio": 150},
-  {"nombre": "Producto 3", "precio": 200}
+  {
+    "nombre": "Sensor de pulso cardíaco",
+    "precio": 150,
+    "imagen": "https://via.placeholder.com/200x150.png?text=Sensor+Cardiaco"
+  },
+  {
+    "nombre": "Oxímetro digital",
+    "precio": 320,
+    "imagen": "https://via.placeholder.com/200x150.png?text=Oximetro"
+  },
+  {
+    "nombre": "Termómetro infrarrojo",
+    "precio": 280,
+    "imagen": "https://via.placeholder.com/200x150.png?text=Termometro"
+  }
 ]

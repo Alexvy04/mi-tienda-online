@@ -14,7 +14,12 @@ function mostrarProductos() {
   productos.forEach((producto, index) => {
     const div = document.createElement('div');
     div.className = 'producto';
-    div.innerHTML = `<strong>${producto.nombre}</strong><br>$${producto.precio}<br><button onclick="agregarAlCarrito(${index})">Agregar al carrito</button>`;
+    div.innerHTML = `
+      <img src="${producto.imagen}" alt="${producto.nombre}">
+      <h3>${producto.nombre}</h3>
+      <p>$${producto.precio}</p>
+      <button onclick="agregarAlCarrito(${index})">Agregar al carrito</button>
+    `;
     contenedor.appendChild(div);
   });
 }

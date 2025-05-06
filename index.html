@@ -2,19 +2,41 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Tienda Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OdontoRey - Productos Biomédicos</title>
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
   <header>
-    <h1>Mi Tienda Online</h1>
+    <img src="logotipo.png" alt="Logo OdontoRey" class="logo">
+    <h1>OdontoRey</h1>
+    <p>Soluciones en productos y servicios para la salud</p>
   </header>
+
   <main>
-    <div id="productos"></div>
-    <h2>Carrito</h2>
-    <ul id="carrito"></ul>
-    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    <section id="productos" class="grid"></section>
+
+    <section id="carrito-container">
+      <h2>Carrito</h2>
+      <ul id="carrito"></ul>
+      <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/xdovgbwk" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 OdontoRey - Todos los derechos reservados</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
